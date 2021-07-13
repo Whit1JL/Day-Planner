@@ -45,7 +45,6 @@ $(document).ready(function () {
             //check if time is present (red)
             if (milTime[i] === currentHour) {
                 $(timeClock[i]).addClass("present");
-
             }
             //check if time is past (gray)
             else if (milTime[i] >= currentHour) {
@@ -55,10 +54,7 @@ $(document).ready(function () {
             else {
                 $(timeClock[i]).addClass("past");
             };
-
         }
-
     };
     styleHour();
-
 });
